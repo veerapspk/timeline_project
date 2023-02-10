@@ -1,0 +1,134 @@
+.bg-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(192, 191, 191);
+}
+.content-container {
+  width: 90%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+.search-and-sort-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  justify-content: space-between;
+}
+.search-container {
+  display: flex;
+  border: solid orange 2px;
+  height: 35px;
+  border-radius: 4px;
+  width: 90%;
+  max-width: 300px;
+}
+h1 {
+  text-align: center;
+  color: orange;
+  font-size: 38px;
+}
+.input-container {
+  outline: none;
+  border-style: none;
+  height: 31px;
+  flex-grow: 1;
+  padding-left: 10px;
+}
+.filter-container {
+  outline: none;
+  border-style: none;
+  height: 31px;
+  border-left: orange solid 2px;
+  padding-left: 6px;
+}
+table {
+  width: 100%;
+  border: solid black 2px;
+  background-color: black;
+  margin-bottom: 30px;
+}
+.btn {
+  border-color: orange;
+  background-color: white;
+  color: orange;
+  outline: none;
+  cursor: pointer;
+  padding: 5px 15px;
+  margin-right: 5px;
+
+  border-radius: 5px;
+  font-weight: bold;
+}
+.btn-container {
+  margin-top: 10px;
+}
+.active {
+  background-color: orange;
+  color: white;
+}
+.arrowBtn {
+  background-color: transparent;
+  font-weight: bold;
+  border-style: none;
+  padding-top: 10px;
+}
+th {
+  text-align: left;
+  border: black solid 1px;
+  background-color: orange;
+  padding: 10px;
+  color: black;
+  font-weight: 800;
+  font-size: 19px;
+  min-width: 140px;
+}
+.records {
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 18px;
+  color: orange;
+}
+.pagination-input {
+  width: 90%;
+  max-width: 300px;
+  border: solid orange 2px;
+  height: 35px;
+  border-radius: 4px;
+  outline: none;
+}
+option {
+  color: orange;
+}
+select {
+  color: orange;
+  padding-left: 10px;
+  font-weight: bold;
+}
+.success-container {
+  padding-bottom: 30px;
+}
+.failure {
+  color: orange;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}
+@media screen and (min-width: 768px) {
+  .content-container {
+    width: 80%;
+  }
+  .search-and-sort-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+}
